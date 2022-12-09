@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/551865711f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="./images/logoBm.jpg" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header"> Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fortoflio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i>
+           
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         
+        </nav>
+        <div class="textHeader">
+          <p>UI/Frontend Developer</p>
+          <h1>
+            Hi, I' m
+            <span
+              >Bablu<br />
+              <span style="font-size: 40px">Mehta</span></span
+            >
+            from India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/about.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+             <h1 class='sub-title'>About Me</h1>
+              <p id="about-p-text"> Hi, I am frontend developer with good knowledge and much experience
+                with frontend technology like JavaScript,ReactJs, HTML,CSS and basic
+                of fullStack, currently I am working as internship in Refactor Academy
+                since may-2022 till know,
+               </p>
+              <div class="tab-title">
+                <p class="tab-link active-link" onclick="openTab('skill')">Skill</p>
+                <p class="tab-link" onclick="openTab('experience')">Eexperience </p>
+                <p class="tab-link" onclick="openTab('education')">Education</p>
+
+              </div>
+              <div class="tab-contain active-tab" id="skill">
+                <ul>
+                  <li><span>UI/UX</span> <br>Designing Web/App Interfaces</li>
+                  <li><span>Web Development</span> <br>Web App Development</li>
+                  <li><span>App Development </span><br>Building Android/iOS App</li>
+                </ul>
+              </div>
+              <div class="tab-contain" id="experience">
+                <ul>
+                  <li><span>May 2022 - Current </span><br>UI/Web Development Refactor 
+                    Academy<br>As Intern</li>
+                  <li><span>2021 -May 2022 </span><br>Self Learning <br>JavaScript, Java<br> Relevant Skill</li>
+                  </ul>
+              </div>
+              <div class="tab-contain" id="education">
+                <ul>
+                  <li><span>2008-2012</span> <br>Garduation (V.B.U.) Hazaribag</li>
+                  <li><span>2005-2007</span> <br>Intermediate from Markham College(Hazaribag)</li>
+                  <li><span>2005</span> <br>Metriculation</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- -------------- services------------ -->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="service-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1>Web Developer</h1>
+          <p>Web developers often are required to examine any errors in their code. 
+            This requires good analytical skills. 
+            They are required to ensure the code is correct and the website functions properly.</p>
+            <a href="#">Leran More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h1>App Developer</h1>
+          <p>App developers often are required to examine any errors in their code.
+             This requires good analytical skills. They are required to
+              ensure the code is correct and the website functions properly.</p>
+            <a href="#">Leran More</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop-simple"></i>
+
+          <h1>fullStack Developer</h1>
+          <p>A full-stack developer is a developer who works on both – 
+            frontend and backend parts of the application. They
+             are skilled to deal with all kinds of 
+            work such as databases, servers, system engineering, architecting, 
+            and client communication that are required to make complete products.</p>
+            <a href="#">Leran More</a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- --------------portoflio--------- -->
+   <div id="portoflio">
+    <h1 class="container">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./images/workImg1.webp" alt="">
+        <div class="layer">
+          <h3>Ecommerce App</h3>
+          <p> As the client-side of the website, frontend technology is all about
+             creating a functional and engaging customer experience. 
+             Frontend developers often manage this side of the website using programming 
+             languages like HTML, JavaScript,ReactJs and CSS.
+          </p>
+          <a href="https://reliable-beijinho-0e7115.netlify.app" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/tic-tac-toe.jpeg" alt="">
+        <div class="layer">
+          <h3>Tic-Tac-Toe Game</h3>
+          <p> The App connects you to the talented people around the world.
+            Social media is not a media. The key is to listen, engage, and build relationships.
+          </p>
+          <a href="https://heroic-speculoos-bde3ca.netlify.app" target="blank"><i class="fa-solid fa-paperclip"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/carParking.jpg" alt="">
+        <div class="layer">
+          <h3>Car Parking App</h3>
+          <p> A parking lottery is the worse thing for drivers every weekday morning.
+             In a busy city, it’s usually hard to find an empty slot because the amount of cars is always higher. 
+             What if you could manage the parking and check the free slots on the nearest one</p>
+          <a href="https://thriving-pie-e34053.netlify.app" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/notesAppImg.png" alt="">
+        <div class="layer">
+          <h3>Notes App</h3>
+          <p> Notes app is used for making short text notes, 
+            update when you need them, and trash when you are done.
+             It can be used for various functions as you can add your to-do list 
+             in this app, some important notes for future reference, etc.
+          </p>
+          <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+        </div>
+      </div>
+     
+    </div>
+    <a class="btn"> See More</a>
+   </div>
+
+   <!-- -----------contanct--------- -->
+   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+         <h1 sub-title>Contact Me</h1>
+         <p><i class="fa-regular fa-envelope"></i>bablukumarm241@gmail.com</p>
+         <p><i class="fa-solid fa-phone-volume"></i>8800899984</p>
+         <div class="social-icon">
+         <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+         <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+         <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+         <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="./images/myCV.docx"  class="btn btn2">Download CV</a>
+        </div>
+        
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required 
+          autocomplete="new-password">
+          <input type="email" name="Mail" id="" placeholder="Your Email" required
+           autocomplete="new-password">
+          <textarea name="Message"  rows="6" placeholder="Your Message" ></textarea>
+          <span id="smg"></span>
+          <button type="submit" class="btn btn2">Submit </button>
+         
+        </form>
+       
+        </div>
+      </div>
+    </div>
+   </div>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwR6MHD5nZOllOTs7svOG3ZGN8etcw5SS5IUWXjPZbzn-Y98UpG0g2EsL3LhxtvlJmY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const smg = document.getElementById("smg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          smg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+           smg.innerHTML= ""
+          },3000)
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    <script src= main.js></script>
+  </body>
+</html>
